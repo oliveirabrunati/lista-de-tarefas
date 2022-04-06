@@ -1,0 +1,8 @@
+ul{
+    list-style: none;
+}
+
+input li.checked{
+    text-decoration: line-through;
+}
+

@@ -1,0 +1,28 @@
+<!-- Crie um campo de input de texto e um botão para adicionar a tarefa à lista;
+Quando o botão for pressionado, o texto deve aparecer na lista com um checkbox ao lado;
+Quando o usuário selecionar o checkbox, o item correspondente deve ficar com o texto riscado.
+(ex.: tarefa completa. dica: você pode resolver isso facilmente com CSS) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <div>
+        <input type="text" id="novaTarefa" placeholder="Adicione nova tarefa">
+        <button onclick="adicionarTarefa()">Adicionar</button>
+    </div>
+    <ul id="listadeTarefas">
+
+    </ul>
+    <div></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
