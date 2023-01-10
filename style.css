@@ -17,7 +17,7 @@ input[type="checkbox"]{
 label{
   display: inline-block;
   padding: 5px 40px;
-  font-size: 20px !important;
+  /* font-size: 20px !important; */
   width: 340px;
   height: 35px;
   background-color: #eee;
@@ -29,12 +29,13 @@ label{
 }
 
 .delete{
+  position: absolute;
   background-color: #2C6BEC;
   color: #FFFFFF;
   border: 1px solid #2C6BEC;
   cursor: pointer;
-  padding: 5px;
-  border-radius: 4px;
+  padding: 9px;
+  border-radius: 0 4px 4px 0;
 }
 
 .delete:hover{
@@ -59,6 +60,7 @@ label{
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .tarefas{
@@ -70,8 +72,10 @@ label{
 
 .tarefas input{
   padding: 10px;
+  width: 295px;
   border: 1px solid #c0c0c0;
   border-radius: 4px 0 0 4px;
+  font-size: 20px;
 }
 
 .tarefas input:focus{
@@ -132,8 +136,8 @@ label{
     font-size: 16px;
   }
   .tarefas input{
-    width: 220px;
-
+    width: 205px;
+    font-size: 16px;
   }
   #inputgroup{
     font-size: 16px;
