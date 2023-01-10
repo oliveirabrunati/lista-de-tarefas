@@ -2,7 +2,7 @@
 Projeto responsivo desenvolvido em JavaScript
 
 ## Screenshot do Projeto
-![screenshot-lista-de-tarefas](https://user-images.githubusercontent.com/98422749/211584349-40ebc128-4618-4044-9999-fc81f930c27e.PNG)
+![screenshot-lista-de-tarefas](https://user-images.githubusercontent.com/98422749/211589815-39cb9bdd-2597-48a8-8f60-2def3fa6d46d.PNG)
 
 ## Tecnologias utilizadas
 
