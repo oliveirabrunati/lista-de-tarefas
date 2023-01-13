@@ -1,18 +1,38 @@
 const itensdaLista = [];
 
+let divAlerta = document.getElementById("alerta");
+
 /* função criada para adicionar itens na lista */
 function adicionarTarefa() {
   let campoInput = document.getElementById("novaTarefa");
 
-  let tarefa = {
-    descricao: campoInput.value,
-    riscado: false,
-  };
+  if (campoInput.value.length == 0) {
+    campoInput.innerHTML = "";
 
-  itensdaLista.push(tarefa);
+    let paragrafo = document.createElement("p");
+    paragrafo.innerText = "Por favor adicione uma tarefa!";
+    paragrafo.classList.add("alerta");
+    paragrafo.classList.add("fadeOut");
+    divAlerta.appendChild(paragrafo);
 
+    
+    setTimeout(function(){
+      // remove o paragrafo após 3 s 
+      paragrafo.remove();
+    },3000);
+
+  } else {
+
+    let tarefa = {
+      descricao: campoInput.value,
+      riscado: false,
+    };
+
+    itensdaLista.push(tarefa);
+  }
   /* chamando a função exibitListaTarefas */
   exibirListaTarefas();
+
   /* Limpar campo Input */
   campoInput.value = "";
 }
@@ -58,7 +78,6 @@ function exibirListaTarefas() {
     campoLabel.addEventListener("click", function () {
       // Compara o valor da variável com false e armazena o resultado em riscado
       itensdaLista[posicao].riscado = itensdaLista[posicao].riscado == false;
-
 
       // if(!itensdaLista[posicao].riscado){
       //     itensdaLista[posicao].riscado = true;

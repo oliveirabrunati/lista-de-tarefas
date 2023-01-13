@@ -26,6 +26,7 @@ label{
 
 #inputgroup{
   display: flex;
+  margin-bottom: 15px;
 }
 
 .delete{
@@ -102,9 +103,8 @@ label{
 }
 
 .alerta{
+  margin-top: 10px;
   background-color: #F2DEDE;
-  width: 300px;
-  margin: 0 auto;
   color: #8d3150;
   border-radius: 4px;
   border: 1px solid #a84667;
